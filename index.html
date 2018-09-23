@@ -3,10 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>nerds's</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 	<header class="main-header">
-		<div class="container">
+		<div class="container ">
 			<div class="header-logo">
 				<img src="img/header-logo.png" alt="Nerds">
 			</div>
@@ -24,17 +25,24 @@
 		</div>
 	</header>
 	<main class="container">
-		<section class="promo">
-			<div class="promo-content-left">
-				<h1 class="promo-title">Долго,дорого,скурпулезно.</h1>
-				<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-				<a class="promo-button" href="#" type="button">Узнать больше</a>
+		<section class="slider">
+			<div class="slider-controls">
+				<i class="active"></i>
+				<i></i>
+				<i></i>
 			</div>
-			<div class="promo-content-right">
-				<img src="img/promo-logo.png" alt="Promo">
+			<div class="slides">
+				<div class="slide">
+					<div class="slide-text">
+						<div class="slide-title">Долго,дорого,скурпулезно.</div>
+						<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+						<a class="promo-button" href="#" type="button">Узнать больше</a>
+					</div>
+				</div>
 			</div>
 		</section>
-		<section class="features">
+
+		<section class="features clearfix">
 			<div class="feature-item">
 				<img class="feature-item-img" src="img/feature-1.png" alt="feature">
 				<h2 class="feature-item-title">Веб-сайты</h2>
@@ -54,9 +62,9 @@
 				<a class="feature feature-button-3" href="#" type="button">Заказать</a>
 			</div>
 		</section>
-		<section class="index-content">
+		<section class="index-content clearfix">
 			<div class="index-content-left">
-				<h2 class="index-content-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+				<p class="index-lead"><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
 				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
 				<b>Выполняем заказы на разработку:</b>
 				<ul>
@@ -87,7 +95,7 @@
 			</div>
 		</section>
 		<section class="trust-us">
-			<div class="trust-us-img">
+			<!--<div class="trust-us-img">
 				<img src="img/trust-us-1.png" alt="trust-us">
 			</div>
 			<div class="trust-us-img">
@@ -99,13 +107,25 @@
 			<div class="trust-us-img">
 				<img src="img/trust-us-4.png" alt="trust-us">
 			</div>
+			не понятно background-image или просто картинка
+			--> 
 		</section>
 	</main>
 	<div class="map">
-		<img src="img/map.png" alt="Map">
+		<div class="container">
+			<div class="text-us">
+				<h3>Nerds Design Studio</h3>
+				<p>
+					191186, Санкт-Петербург,<br>
+					ул. Б. Конюшенная,д. 19/8<br><br>
+					тел. +7(812) 275-75-75
+				</p>
+				<a class="map-button" href="#">Напишите нам</a>
+			</div>
+		</div>
 	</div>
 	<footer class="main-footer">
-		<div class="main-footer-container">
+		<div class="container clearfix">
 			<section class="footer-social">
 				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
 				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
