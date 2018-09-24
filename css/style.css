@@ -6,6 +6,7 @@ body {
 	padding: 0;
 }
 
+
 .clearfix::after {
 	content: "";
 
@@ -119,3 +120,62 @@ body {
 	float: right;
 	width: 560px;
 }
+
+
+.main-title {
+	padding-top:75px;
+	padding-bottom: 115px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+
+.sidebar {
+	float: left;
+	width: 260px;
+	margin-right: 140px;
+}
+
+.sort {
+	margin-bottom: 60px;
+}
+.catalog-content {
+	float: right;
+	width: 760px;
+
+}
+
+
+.sort-title {
+	float: left;
+}
+
+.sort-anc {
+	float: right;
+}
+
+
+.catalog-content-box {
+	margin-bottom: 60px;
+}
+
+
+.catalog-content-element {
+	float: left;
+	width: 360px;
+	min-height: 620px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+}
+
+.catalog-content-element:nth-child(even){
+	float: right;
+	margin-right: 0;
+}
+
+.pagination {
+	margin-bottom: 60px;
+}
+
+
+
