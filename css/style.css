@@ -121,6 +121,7 @@ body {
 	width: 560px;
 }
 
+CATALOG;
 
 .main-title {
 	padding-top:75px;
@@ -176,7 +177,7 @@ body {
 .pagination {
 	margin-bottom: 60px;
 }
-
+*/
 
 /* FLEX  */
 
@@ -275,4 +276,36 @@ body {
 .footer-promo {
 	width: 560px;
 }
+
+
+/*   CATALOG  */
+
+
+.main-title{
+	padding-top:75px;
+	padding-bottom: 115px;
+	margin-bottom: 60px;
+	text-align: center;	
+}
+
+.catalog-main-container {
+	display: flex;
+	margin-bottom: 60px;
+}
+
+.sidebar {
+	width: 260px;
+	margin-right: 140px;
+}
+
+.catalog-content {
+	width: 740px;
+}
+
+.sort {
+	display: flex;
+	justify-content: space-between;
+}
+
+
 
