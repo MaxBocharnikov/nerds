@@ -1014,17 +1014,8 @@ CATALOG;
 .form-mesh li {
 	margin-left: 34px;
 	margin-bottom: 28px;
-	opacity: 0.4;
 }
 
-.form-mesh li:hover {
-	opacity: 1.0;
-}
-
-
-.form-mesh li:disabled {
-	opacity: 0.1;
-}
 
 .form-mesh li:last-child {
 	margin-bottom: 0;
@@ -1045,6 +1036,10 @@ CATALOG;
 	color:#000000;
 }
 
+.form-mesh label:disabled {
+	opacity: 0.3;
+}
+
 .form-mesh input[type = 'radio'] {
 	display: none;
 }
@@ -1063,6 +1058,8 @@ CATALOG;
 	border: 3px solid #B8B8B8;
 	border-radius: 50%;
 
+	opacity: 0.4;
+
 }
 
 
@@ -1078,7 +1075,20 @@ CATALOG;
 
 	background: #B8B8B8;
 	border-radius: 50%;
+
 }
+
+
+.form-mesh input[type='radio']:hover + .radio-indicator {
+	opacity: 1.0;
+}
+
+
+
+.form-mesh input[type='radio']:disabled + .radio-indicator {
+	opacity: 0.1;
+}
+
 
 
 
@@ -1108,16 +1118,8 @@ CATALOG;
 .form-features li {
 	margin-left: 34px;
 	margin-bottom: 28px;
-	opacity: 0.4;
 }
 
-.form-features li:hover {
-	opacity: 1.0;
-}
-
-.form-features li:disabled {
-	opacity: 0.1;
-}
 
 .form-features li:last-child {
 	margin-bottom: 0;
@@ -1134,7 +1136,13 @@ CATALOG;
 	cursor: pointer;
 }
 
+.form-features label:hover {
+	color:#000000;
+}
 
+.form-features label:disabled {
+	opacity: 0.3;
+}
 
 .form-features input[type = 'checkbox'] {
 	display: none;
@@ -1151,7 +1159,8 @@ CATALOG;
 	left: -33px;
 
 	background: url("../img/checkbox-off.png") no-repeat;
-
+	
+	opacity:0.4;
 }
 
 
@@ -1163,6 +1172,14 @@ CATALOG;
 }
 
 
+
+.form-features  input[type = 'checkbox']:hover + .checkbox-indicator {
+	opacity:1.0;
+}
+
+.form-features input[type = 'checkbox']:disabled + .checkbox-indicator {
+	opacity:0.1;
+}
 
 
 .sidebar-form .form-button {
