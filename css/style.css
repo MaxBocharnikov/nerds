@@ -892,3 +892,301 @@ CATALOG;
 
 
 
+.main-title h1 {
+	margin: 0;
+	padding: 0;
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	text-transform: none;
+}
+
+
+.form-price {
+	margin-bottom: 56px;
+}
+
+.form-price h2 {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 52px;
+	
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+
+}
+
+.range {
+	position: relative;
+	padding: 39px 32px;
+	background: #EEEEEE;
+	border-radius: 5%;
+	margin-bottom: 14px;
+}
+
+.range .scale {
+	height: 2px;
+	background: #d7dcde;
+}
+
+.range-left,
+.range-right {
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	background: #ABABAB;
+    border: 9px solid #ffffff;
+    border-radius: 45%;
+    box-shadow: 0px 2px 1px 0px #CFCFCF;
+
+    cursor:pointer;
+}
+
+.range-left {
+	top: 28px;
+    left: 26px;
+}
+
+.range-right {
+	top:28px;
+	right: 68px;
+}
+
+.bar {
+	width: 142px;
+	height: 2px;
+	background: #00CA74;
+}
+
+
+
+.price-value{
+	width: 80px;
+	height: 38px;
+	padding: 8px 10px; 
+	background: #EEEEEE;
+	border: none;
+	border-radius: 5%;
+	margin-left: 10px;
+	text-align: center;
+
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	color:#283136;
+	font-weight: normal;
+
+}
+
+.price-value-left {
+	margin-right: 28px;
+}
+
+.form-price label {
+	font-size: 16px;
+	line-height: 22px;
+	color:#283136;
+	font-weight: normal;
+}
+
+.form-mesh {
+	margin-bottom: 55px;
+}
+
+.form-mesh h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.form-mesh ul,.form-mesh li  {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+.form-mesh li {
+	margin-left: 34px;
+	margin-bottom: 28px;
+	opacity: 0.4;
+}
+
+.form-mesh li:hover {
+	opacity: 1.0;
+}
+
+
+.form-mesh li:disabled {
+	opacity: 0.1;
+}
+
+.form-mesh li:last-child {
+	margin-bottom: 0;
+}
+
+.form-mesh label {
+	position: relative;
+
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: normal;
+	color:#283136;
+
+	cursor: pointer;
+}
+
+.form-mesh label:hover {
+	color:#000000;
+}
+
+.form-mesh input[type = 'radio'] {
+	display: none;
+}
+
+.form-mesh input[type='radio'] + .radio-indicator {
+	position: absolute;
+
+	width: 18px;
+	height: 18px;
+
+    left: -33px;
+    top: -3px;
+
+	background: #ffffff;
+
+	border: 3px solid #B8B8B8;
+	border-radius: 50%;
+
+}
+
+
+.form-mesh input[type='radio']:checked + .radio-indicator::before {
+	content: "";
+	position: absolute;
+	
+	width: 8px;
+	height: 8px;
+
+    top: 5px;
+    left: 5px;
+
+	background: #B8B8B8;
+	border-radius: 50%;
+}
+
+
+
+.form-features {
+	margin-bottom: 48px;
+
+}
+
+
+.form-features h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.form-features ul,.form-features li  {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+.form-features li {
+	margin-left: 34px;
+	margin-bottom: 28px;
+	opacity: 0.4;
+}
+
+.form-features li:hover {
+	opacity: 1.0;
+}
+
+.form-features li:disabled {
+	opacity: 0.1;
+}
+
+.form-features li:last-child {
+	margin-bottom: 0;
+}
+
+.form-features label {
+	position: relative;
+
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: normal;
+	color:#283136;
+
+	cursor: pointer;
+}
+
+
+
+.form-features input[type = 'checkbox'] {
+	display: none;
+}
+
+
+.form-features input[type = 'checkbox'] + .checkbox-indicator {
+	position: absolute;
+
+	width: 23px;
+	height: 23px;
+
+	top: -3px;
+	left: -33px;
+
+	background: url("../img/checkbox-off.png") no-repeat;
+
+}
+
+
+
+.form-features input[type = 'checkbox']:checked + .checkbox-indicator {
+	width: 27px;
+	height: 27px;
+	background: url("../img/checkbox-on.png") no-repeat;
+}
+
+
+
+
+.sidebar-form .form-button {
+	padding: 18px 90px;
+
+	color: #000000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: normal;
+	text-transform: uppercase;
+
+	background: #EEEEEE;
+	border: none;
+}
+
+.sidebar-form .form-button:hover {
+	background: #DFDFDF;
+}
+
+.sidebar-form .form-button:active {
+	color: : #B4B4B4;
+	box-shadow: 0px 2px 0px 0px #DFDFDF;
+}
+
+
+

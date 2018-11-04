@@ -9,7 +9,7 @@
 	<header class="main-header">
 		<div class="container ">
 			<div class="header-logo">
-				<img src="img/header-logo.png" alt="Nerds">
+				<img src="img/nerds-logo.png" alt="Nerds">
 			</div>
 			<nav class="main-navigation">
 				<ul>
@@ -23,48 +23,54 @@
 				<a class="cart" href="#">Корзина</a>
 			</div>
 		</div>
-
-	</header>
-	<div class="main-title">
+		<div class="main-title">
 			<h1>Магазин готовых шаблонов</h1>
-	</div>
+		</div>
+	</header>
+
 	<main class="container catalog-main-container">
 		<aside class="sidebar">
 			<form class="sidebar-form" action="#" method="get">
 				<div class="form-price">
-					<h2>Стоимость</h2>
+					<h2>Стоимость:</h2>
 					<div class="range">
-						<div class="range-left"></div>
-						<div class="range-right"></div>
+							<div class="scale">
+								<div class="bar"></div>
+							</div>
+							<div class="range-left"></div>
+							<div class="range-right"></div>
 					</div>
 					<label>
-						<p>От</p>
-						<input class="price-value price-value-left" type="text" name="from">
+						От
+						<input class="price-value price-value-left" value="0" type="text" name="from">
 					</label>
 					<label>
-						<p>До</p>
-						<input class="price-value price-value-right" type="text" name="to">
+						До
+						<input class="price-value price-value-right" value="15 000" type="text" name="to">
 					</label>			
 				</div>
 				<div class="form-mesh">
-					<h2>Cетка</h2>
+					<h2>Cетка:</h2>
 					<ul>
 						<li>
 							<label>
-								<p>Адаптивная</p>
-								<input type="radio" checked="" name="adaptive">
+								Адаптивная
+								<input type="radio" name="mesh" value="apaptive" checked="">
+								<span class="radio-indicator"></span>
 							</label>
 						</li>
 						<li>
 							<label>
-								<p>Фиксированная</p>
-								<input type="radio" name="fixe">
+								Фиксированная
+								<input type="radio" name="mesh" value="fixed" name="fixed">
+								<span class="radio-indicator"></span>
 							</label>
 						</li>
 						<li>
 							<label>
-								<p>Резиновая</p>
-								<input type="radio" name="rubber">
+								Резиновая
+								<input type="radio" value="rubber"  name="mesh">
+								<span class="radio-indicator"></span>
 							</label>
 						</li>
 					</ul>
@@ -74,32 +80,37 @@
 					<ul>
 						<li>
 							<label>
-								<p>Слайдер</p>
-								<input type="checkbox" checked="" name="slider">
+								Слайдер
+								<input type="checkbox" checked="" name="features"  value="slider">
+								<span class="checkbox-indicator"></span>
 							</label>
 						</li>
 						<li>
 							<label>
-								<p>Блок преимуществ</p>
-								<input type="checkbox" name="features-block">
+								Блок преимуществ
+								<input type="checkbox" name="features" value="features-block">
+								<span class="checkbox-indicator"></span>
 							</label>
 						</li>
 						<li>
 							<label>
-								<p>Новости</p>
-								<input type="checkbox" checked="" name="news">
+								Новости
+								<input type="checkbox" checked="" name="features" value="news">
+								<span class="checkbox-indicator"></span>
 							</label>
 						</li>
 						<li>
 							<label>
-								<p>Галерея</p>
-								<input type="checkbox" name="gallery">
+								Галерея
+								<input type="checkbox" name="features" value="gallery">
+								<span class="checkbox-indicator"></span>
 							</label>
 						</li>
 						<li>
 							<label>
-								<p>Корзина</p>
-								<input type="checkbox" name="cart">
+								Корзина
+								<input type="checkbox" name="features" value="cart">
+								<span class="checkbox-indicator"></span>
 							</label>
 						</li>
 					</ul>
@@ -188,9 +199,9 @@
 	<footer class="main-footer">
 		<div class="container clearfix">
 			<section class="footer-social">
-				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				<a class="social-btn social-btn-vk" href="#"><img src="img/vk-icon.png" width="26px" height="15px" alt="vk"></a>
+				<a class="social-btn social-btn-fb" href="#"><img src="img/fb-icon.png" width="12px" height="22px" alt="fb"></a>
+				<a class="social-btn social-btn-inst" href="#"><img src="img/insta-icon.png" width="21px" height="21px" alt="insta"></a>
 			</section>
 			<section class="footer-promo">
 				<h3>Давайте дружить, это выгодно!</h3>
