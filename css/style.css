@@ -730,7 +730,7 @@ CATALOG;
 	width: 100%;
 	height: 416px;
 
-	background: #B5B5B5 url("../img/map-bg.jpg") no-repeat;
+	background: #B5B5B5 /*url("../img/map-bg.jpg") no-repeat*/;
 	background-size: cover;
 }
 
@@ -1505,5 +1505,271 @@ CATALOG;
 	background: #D5D5D5
 	box-shadow: inset 0px 1px 0 #BFBFBF;
 }
+
+
+/* Модальное окно */
+
+.modal-write-us {
+	display: none;
+	position: fixed;
+	width: 960px;
+	padding: 65px 100px;
+
+	bottom: 180px;
+	left: 264px;
+
+	box-sizing: border-box;
+
+	background: #FFFFFF;
+	box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75); 
+
+	z-index: 3000;
+	opacity: 0;
+	
+}
+
+.modal-write-us form {
+	margin: 0;
+	padding: 0;
+}
+
+.modal-header {
+	margin: 0;
+	padding: 0;
+
+	font-size: 45px;
+	line-height: 45px;
+	color: #000000;
+	font-weight: 500;
+
+	margin-bottom: 48px;
+}
+
+.modal-form .block {
+	display: inline-block;
+}
+
+.modal-form p {
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	font-size: 16px;
+	line-height: 18px;
+	color: #000000;
+	font-weight: bold;
+
+	margin-bottom: 12px;
+}
+
+.modal-form input {
+	display: block;
+	width: 354px;
+
+	padding: 15px 8px;
+	box-sizing: border-box;
+
+	color: #000000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+
+	border: 3px solid #D7DCDE;
+	margin-bottom: 35px;
+}
+
+.modal-form input:hover,
+.modal-message:hover {
+	border: 3px solid #B4B9BB;
+}
+
+.modal-form input:focus,
+.modal-message:focus {
+	border: 3px solid #000000;
+	box-shadow: none;
+}
+
+.modal-name {
+	margin-right: 40px;
+}
+
+.modal-message {
+	display: block;
+	resize: none;
+
+	width: 754px;
+	height: 112px;
+	padding: 14px 8px;
+	
+	box-sizing: border-box;
+
+	color: #000000;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+
+	border: 3px solid #D7DCDE;
+
+	margin-bottom: 47px;
+
+}
+
+
+
+.modal-button {
+	display: block;
+	box-sizing: border-box;
+	width: 260px;
+	padding: 18px 60px;
+	margin-bottom: 10px;
+
+	text-align: center;
+	line-height: 18px;
+	color: #ffffff;
+	text-transform: uppercase;
+	cursor: pointer;
+
+	border: none;
+	border-radius: 5%;
+	background:#FB565A;
+}
+
+
+.modal-button:hover {
+	background: #E74246;
+}
+
+.modal-button:active {
+	background: #D7373B;
+}
+
+.modal-write-us .close {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+
+	cursor: pointer;
+
+	width: 21px;
+	height: 21px;
+
+	top: 80px;
+	right: 94px;
+
+	border: none;
+	background: #ffffff;
+}
+
+
+.modal-write-us .close::before,
+.modal-write-us .close::after {
+	content: "";
+	position: absolute;
+
+	width: 21px;
+	height: 3px;
+
+	top:8px;
+	left: 0;
+
+	background: #FECCCD;
+
+}
+
+.modal-write-us .close:hover::before,
+.modal-write-us .close:hover::after {
+	background: #FB565A;
+}
+
+.modal-write-us .close:active::before,
+.modal-write-us .close:active::after {
+	background: #FFEEEE;
+}
+
+.modal-write-us .close::before {
+	transform: rotate(45deg);
+}
+
+.modal-write-us .close::after {
+	transform: rotate(-45deg);
+}
+
+
+.modal-overlay {
+	display: none;
+	position: fixed;
+
+	width: 100%;
+	height: 100%;
+
+	top: 0;
+	left: 0;
+
+	z-index: 2000;
+
+	background: rgba(0,0,0,0.5);
+}
+
+
+@keyframes show{
+	 0%{
+		 opacity:0;
+	 } 
+	 
+	 100% {
+		 opacity:1;
+	 }
+}
+
+
+
+
+
+.modal-write-us-show {
+	display: block;
+	opacity: 1.0;
+
+}
+
+
+
+
+.modal-write-us-opacity {
+	animation: show 1s; /* Указываем название анимации, её время и количество повторов*/
+}
+
+.overlay-show {
+	display: block;
+}
+
+.modal-red-border {
+	border: 3px solid #E74246 !important;
+
+}
+
+.modal-shake {
+	animation: shake 0.6s;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+
 
 

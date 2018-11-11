@@ -272,6 +272,7 @@
 				<a class="map-button" href="#">Напишите нам</a>
 			</div>
 		</div>
+			<iframe src="https://yandex.ru/map-widget/v1/-/CBFIAXBK-D" style="pointer-events: none;" width="100%" height="416" frameborder="1" allowfullscreen="true"></iframe>
 	</div>
 	<footer class="main-footer">
 		<div class="container clearfix">
@@ -286,6 +287,34 @@
 			</section>
 		</div>
 	</footer>
+	<div class="modal-write-us">
+			<button class="close">Закрыть</button>
+			<h2 class="modal-header">Напишите нам</h2>
+			<form action="#" class="modal-form" method="post">
+				<div class="block">
+					<label>
+						<p>Ваше имя:</p>
+						<input type="text" class="modal-name" name="name" placeholder="Представьтесь, пожалуйста">
+					</label>
+				</div>
+				<div class="block">
+					<label>
+						<p>Ваш e-mail:</p>
+						<input type="text" class="modal-email" name="email" placeholder="Для отправки ответа">
+					</label>
+				</div>
+				<div class="block">
+					<label>
+						<p>Текст письма:</p>
+						<textarea name="message" class="modal-message" placeholder="В свободной форме"></textarea>
+					</label>
+				</div>
 
+				<button type="submit" class="modal-button" name="submit">Отправить</button>
+			</form>
+		</div>
+
+	<div class="modal-overlay"></div>
+	<script src="js/script.js"></script>
 </body>
 </html>
