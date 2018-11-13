@@ -404,8 +404,9 @@ CATALOG;
 	background-position: 100% 10px;
 }
 
+
 .slide:nth-child(1) {
-	display: block;
+	display: none;
 }
 
 .slide:nth-child(2) {
@@ -415,6 +416,12 @@ CATALOG;
 .slide:nth-child(3) {
 	display: none;
 }
+
+.slide-show {
+	display: block !important;
+	
+}
+
 
 .features {
 	display: flex;
