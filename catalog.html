@@ -28,237 +28,239 @@
 		</div>
 	</header>
 
-	<main class="container catalog-main-container">
-		<aside class="sidebar">
-			<form class="sidebar-form" action="#" method="get">
-				<div class="form-price">
-					<h2>Стоимость:</h2>
-					<div class="range">
-							<div class="scale">
-								<div class="bar"></div>
+	<main class="main">
+		<div class="container catalog-main-container">
+			<aside class="sidebar">
+				<form class="sidebar-form" action="#" method="get">
+					<div class="form-price">
+						<h2>Стоимость:</h2>
+						<div class="range">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="range-left"></div>
+								<div class="range-right"></div>
+						</div>
+						<label>
+							От
+							<input class="price-value price-value-left" value="0" type="text" name="from">
+						</label>
+						<label>
+							До
+							<input class="price-value price-value-right" value="15 000" type="text" name="to">
+						</label>			
+					</div>
+					<div class="form-mesh">
+						<h2>Cетка:</h2>
+						<ul>
+							<li>
+								<label>
+									Адаптивная
+									<input type="radio" name="mesh" value="apaptive" checked="">
+									<span class="radio-indicator"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									Фиксированная
+									<input type="radio" name="mesh" value="fixed">
+									<span class="radio-indicator"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									Резиновая
+									<input type="radio" value="rubber"  name="mesh">
+									<span class="radio-indicator"></span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<div class="form-features">
+						<h2>Особенности</h2>
+						<ul>
+							<li>
+								<label>
+									Слайдер
+									<input type="checkbox" checked="" name="features"  value="slider">
+									<span class="checkbox-indicator"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									Блок преимуществ
+									<input type="checkbox" name="features" value="features-block">
+									<span class="checkbox-indicator"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									Новости
+									<input type="checkbox" checked="" name="features" value="news">
+									<span class="checkbox-indicator"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									Галерея
+									<input type="checkbox" name="features" value="gallery">
+									<span class="checkbox-indicator"></span>
+								</label>
+							</li>
+							<li>
+								<label>
+									Корзина
+									<input type="checkbox" name="features" value="cart">
+									<span class="checkbox-indicator"></span>
+								</label>
+							</li>
+						</ul>
+					</div>
+					<button type="submit" class="form-button">Показать</button>
+				</form>
+			</aside>
+			<section class="catalog-content">
+				<div class="sort clearfix">
+					<h2 class="sort-title">Сортировать:</h2>
+					<div class="sort-anc">
+							<a class="active sort-types" href="#">По цене</a>
+							<a class="sort-types" href="#">По типу</a>
+							<a class="sort-types" href="#">По названию</a>
+					</div>
+					<div class="sort-order">
+						<a class="active" href="#"></a>
+						<a href="#"></a>		
+					</div>
+				</div>
+
+				<div class="catalog-content-box clearfix">
+
+					<div class="catalog-content-element">
+						<div class="element-header">
+							<div class="header-controls">
+								<i></i>
+								<i></i>
+								<i></i>
 							</div>
-							<div class="range-left"></div>
-							<div class="range-right"></div>
+						</div>
+						<div class="element-body">
+							<img src="img/img-sedona.jpg" width="360" height="576" alt="sedona">
+							<div class="element-info">
+								<b>Sedona</b>
+								<p>Информационный сайт для туристов</p>
+								<a class="element-info-button" href="#">9 900 руб</a>	
+							</div>
+						</div>
 					</div>
-					<label>
-						От
-						<input class="price-value price-value-left" value="0" type="text" name="from">
-					</label>
-					<label>
-						До
-						<input class="price-value price-value-right" value="15 000" type="text" name="to">
-					</label>			
+
+					<div class="catalog-content-element">
+						<div class="element-header">
+							<div class="header-controls">
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+						</div>
+						<div class="element-body">
+							<img src="img/img-pink.jpg" width="360" height="576" alt="pink">
+							<div class="element-info">
+								<b>Sedona</b>
+								<p>Информационный сайт для туристов</p>
+								<a class="element-info-button" href="#">9 900 руб</a>	
+							</div>
+						</div>
+					</div>
+
+
+					<div class="catalog-content-element">
+						<div class="element-header">
+							<div class="header-controls">
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+						</div>
+						<div class="element-body">
+							<img src="img/img-barbershop.jpg" width="360" height="576" alt="barbershop">
+							<div class="element-info">
+								<b>Sedona</b>
+								<p>Информационный сайт для туристов</p>
+								<a class="element-info-button" href="#">9 900 руб</a>	
+							</div>
+						</div>
+					</div>
+
+
+					<div class="catalog-content-element">
+						<div class="element-header">
+							<div class="header-controls">
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+						</div>
+						<div class="element-body">
+							<img src="img/img-mishka.jpg" width="360" height="576" alt="mishka">
+							<div class="element-info">
+								<b>Sedona</b>
+								<p>Информационный сайт для туристов</p>
+								<a class="element-info-button" href="#">9 900 руб</a>	
+							</div>
+						</div>
+					</div>
+
+						
+					<div class="catalog-content-element">
+						<div class="element-header">
+							<div class="header-controls">
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+						</div>
+						<div class="element-body">
+							<img src="img/img-aplus.jpg" width="360" height="576" alt="aplus">
+							<div class="element-info">
+								<b>Sedona</b>
+								<p>Информационный сайт для туристов</p>
+								<a class="element-info-button" href="#">9 900 руб</a>	
+							</div>
+						</div>
+					</div>
+
+
+					<div class="catalog-content-element">
+						<div class="element-header">
+							<div class="header-controls">
+								<i></i>
+								<i></i>
+								<i></i>
+							</div>
+						</div>
+						<div class="element-body">
+							<img src="img/img-kvast.jpg" width="360" height="576" alt="kvast">
+							<div class="element-info">
+								<b>Sedona</b>
+								<p>Информационный сайт для туристов</p>
+								<a class="element-info-button" href="#">9 900 руб</a>	
+							</div>
+						</div>
+					</div>
+
+
 				</div>
-				<div class="form-mesh">
-					<h2>Cетка:</h2>
+
+				<div class="pagination">
 					<ul>
-						<li>
-							<label>
-								Адаптивная
-								<input type="radio" name="mesh" value="apaptive" checked="">
-								<span class="radio-indicator"></span>
-							</label>
-						</li>
-						<li>
-							<label>
-								Фиксированная
-								<input type="radio" name="mesh" value="fixed">
-								<span class="radio-indicator"></span>
-							</label>
-						</li>
-						<li>
-							<label>
-								Резиновая
-								<input type="radio" value="rubber"  name="mesh">
-								<span class="radio-indicator"></span>
-							</label>
-						</li>
+						<li class="prev"><a href="#">Предыдущая</a></li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li class="next"><a href="#">Следующая</a></li>
 					</ul>
 				</div>
-				<div class="form-features">
-					<h2>Особенности</h2>
-					<ul>
-						<li>
-							<label>
-								Слайдер
-								<input type="checkbox" checked="" name="features"  value="slider">
-								<span class="checkbox-indicator"></span>
-							</label>
-						</li>
-						<li>
-							<label>
-								Блок преимуществ
-								<input type="checkbox" name="features" value="features-block">
-								<span class="checkbox-indicator"></span>
-							</label>
-						</li>
-						<li>
-							<label>
-								Новости
-								<input type="checkbox" checked="" name="features" value="news">
-								<span class="checkbox-indicator"></span>
-							</label>
-						</li>
-						<li>
-							<label>
-								Галерея
-								<input type="checkbox" name="features" value="gallery">
-								<span class="checkbox-indicator"></span>
-							</label>
-						</li>
-						<li>
-							<label>
-								Корзина
-								<input type="checkbox" name="features" value="cart">
-								<span class="checkbox-indicator"></span>
-							</label>
-						</li>
-					</ul>
-				</div>
-				<button type="submit" class="form-button">Показать</button>
-			</form>
-		</aside>
-		<section class="catalog-content">
-			<div class="sort clearfix">
-				<h2 class="sort-title">Сортировать:</h2>
-				<div class="sort-anc">
-						<a class="active sort-types" href="#">По цене</a>
-						<a class="sort-types" href="#">По типу</a>
-						<a class="sort-types" href="#">По названию</a>
-				</div>
-				<div class="sort-order">
-					<a class="active" href="#"></a>
-					<a href="#"></a>		
-				</div>
-			</div>
-
-			<div class="catalog-content-box clearfix">
-
-				<div class="catalog-content-element">
-					<div class="element-header">
-						<div class="header-controls">
-							<i></i>
-							<i></i>
-							<i></i>
-						</div>
-					</div>
-					<div class="element-body">
-						<img src="img/img-sedona.jpg" width="360" height="576" alt="sedona">
-						<div class="element-info">
-							<b>Sedona</b>
-							<p>Информационный сайт для туристов</p>
-							<a class="element-info-button" href="#">9 900 руб</a>	
-						</div>
-					</div>
-				</div>
-
-				<div class="catalog-content-element">
-					<div class="element-header">
-						<div class="header-controls">
-							<i></i>
-							<i></i>
-							<i></i>
-						</div>
-					</div>
-					<div class="element-body">
-						<img src="img/img-pink.jpg" width="360" height="576" alt="pink">
-						<div class="element-info">
-							<b>Sedona</b>
-							<p>Информационный сайт для туристов</p>
-							<a class="element-info-button" href="#">9 900 руб</a>	
-						</div>
-					</div>
-				</div>
-
-
-				<div class="catalog-content-element">
-					<div class="element-header">
-						<div class="header-controls">
-							<i></i>
-							<i></i>
-							<i></i>
-						</div>
-					</div>
-					<div class="element-body">
-						<img src="img/img-barbershop.jpg" width="360" height="576" alt="barbershop">
-						<div class="element-info">
-							<b>Sedona</b>
-							<p>Информационный сайт для туристов</p>
-							<a class="element-info-button" href="#">9 900 руб</a>	
-						</div>
-					</div>
-				</div>
-
-
-				<div class="catalog-content-element">
-					<div class="element-header">
-						<div class="header-controls">
-							<i></i>
-							<i></i>
-							<i></i>
-						</div>
-					</div>
-					<div class="element-body">
-						<img src="img/img-mishka.jpg" width="360" height="576" alt="mishka">
-						<div class="element-info">
-							<b>Sedona</b>
-							<p>Информационный сайт для туристов</p>
-							<a class="element-info-button" href="#">9 900 руб</a>	
-						</div>
-					</div>
-				</div>
-
-					
-				<div class="catalog-content-element">
-					<div class="element-header">
-						<div class="header-controls">
-							<i></i>
-							<i></i>
-							<i></i>
-						</div>
-					</div>
-					<div class="element-body">
-						<img src="img/img-aplus.jpg" width="360" height="576" alt="aplus">
-						<div class="element-info">
-							<b>Sedona</b>
-							<p>Информационный сайт для туристов</p>
-							<a class="element-info-button" href="#">9 900 руб</a>	
-						</div>
-					</div>
-				</div>
-
-
-				<div class="catalog-content-element">
-					<div class="element-header">
-						<div class="header-controls">
-							<i></i>
-							<i></i>
-							<i></i>
-						</div>
-					</div>
-					<div class="element-body">
-						<img src="img/img-kvast.jpg" width="360" height="576" alt="kvast">
-						<div class="element-info">
-							<b>Sedona</b>
-							<p>Информационный сайт для туристов</p>
-							<a class="element-info-button" href="#">9 900 руб</a>	
-						</div>
-					</div>
-				</div>
-
-
-			</div>
-
-			<div class="pagination">
-				<ul>
-					<li class="prev"><a href="#">Предыдущая</a></li>
-					<li class="active"><a href="#">1</a></li>
-					<li><a href="#">2</a></li>
-					<li><a href="#">3</a></li>
-					<li class="next"><a href="#">Следующая</a></li>
-				</ul>
-			</div>
-		</section>
+			</section>
+		</div>
 	</main>
 	<div class="map">
 		<div class="container">

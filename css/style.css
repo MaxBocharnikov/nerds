@@ -893,7 +893,7 @@ CATALOG;
 }
 
 .sidebar {
-	width: 260px;
+	/*width: 260px;*/
 	margin-right: 140px;
 }
 
@@ -1268,7 +1268,7 @@ CATALOG;
 
 
 .sort-anc a:last-child {
-	margin-right: 40px;
+	margin-right: 39px;
 }
 
 
