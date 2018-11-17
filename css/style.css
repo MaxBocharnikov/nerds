@@ -298,7 +298,7 @@ CATALOG;
 	position: relative;
 
 	width: 1160px;
-	height: 430;
+	height: 430px;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -428,6 +428,7 @@ CATALOG;
 	position: relative;
 	padding-bottom: 80px;
 	margin-bottom: 41px;
+
 }
 
 .feature-item {
@@ -466,6 +467,8 @@ CATALOG;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #ffffff;
+
+	border-radius: 5%;
 }
 
 .feature-button-1 {
@@ -983,6 +986,8 @@ CATALOG;
 	margin-left: 10px;
 	text-align: center;
 
+	box-sizing: border-box;
+
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	line-height: 22px;
@@ -1213,6 +1218,7 @@ CATALOG;
 
 	background: #EEEEEE;
 	border: none;
+	border-radius: 5%;
 
 	cursor: pointer;
 }
@@ -1361,14 +1367,14 @@ CATALOG;
 	display: block;
 }
 
-.element-body img:hover + .element-info::before {
+.element-info::before {
 	content: "";
 	position: absolute;
 
 	width: 360px;
 	height: 41px;
 
-	top:-385px;
+	top:-392px;
 	left: 0;
 
 	background: #4D4D4D;
@@ -1556,7 +1562,7 @@ CATALOG;
 	display: inline-block;
 }
 
-.modal-form p {
+.modal-form label {
 	display: block;
 	margin: 0;
 	padding: 0;
@@ -1566,7 +1572,6 @@ CATALOG;
 	color: #000000;
 	font-weight: bold;
 
-	margin-bottom: 12px;
 }
 
 .modal-form input {
@@ -1582,6 +1587,8 @@ CATALOG;
 	line-height: 18px;
 
 	border: 3px solid #D7DCDE;
+
+	margin-top: 12px;
 	margin-bottom: 35px;
 }
 
@@ -1617,6 +1624,7 @@ CATALOG;
 
 	border: 3px solid #D7DCDE;
 
+	margin-top: 12px;
 	margin-bottom: 47px;
 
 }
@@ -1778,5 +1786,6 @@ CATALOG;
 }
 
 
-
-
+.map iframe {
+	width: 100%;
+}
