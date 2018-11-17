@@ -197,10 +197,14 @@ CATALOG;
 }
 
 .main-header .container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	padding-top: 50px;
 	margin-bottom: 2px;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .main-header .container .header-logo {
@@ -218,8 +222,13 @@ CATALOG;
 }
 
 .main-navigation ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 	padding-top: 12px;
 }
 
@@ -264,7 +273,8 @@ CATALOG;
 .main-navigation a:active,
 .cart a:active {
 	text-decoration: underline;
-	text-decoration-color: #fb565a;
+	-webkit-text-decoration-color: #fb565a;
+	        text-decoration-color: #fb565a;
 }
 .cart {
 	width: 160px;
@@ -386,7 +396,7 @@ CATALOG;
 }
 
 .promo-button:active {
-	background: #D7373B
+	background: #D7373B;
 	opacity: 0.3;
 }
 
@@ -425,6 +435,8 @@ CATALOG;
 
 
 .features {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	position: relative;
 	padding-bottom: 80px;
@@ -520,6 +532,8 @@ CATALOG;
 }
 
 .index-content {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-bottom: 80px;
 }
@@ -530,7 +544,9 @@ CATALOG;
 }
 
 .index-content-right {
-	flex-grow: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
 }
 
 .index-lead {
@@ -603,8 +619,12 @@ CATALOG;
 }
 
 .percentage-block {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 }
 
 .percentage-block h3, .percentage-block p {
@@ -631,9 +651,14 @@ CATALOG;
 }
 
 .trust-us {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 
 	position: relative;
 
@@ -809,6 +834,8 @@ CATALOG;
 .main-footer .container {
 	margin-top: 70px;
 	margin-bottom: 70px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -888,6 +915,8 @@ CATALOG;
 }
 
 .catalog-main-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-bottom: 60px;
 }
@@ -902,6 +931,8 @@ CATALOG;
 }
 
 .sort {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-bottom: 58px;
 }
@@ -1229,7 +1260,7 @@ CATALOG;
 }
 
 .sidebar-form .form-button:active {
-	color: : #B4B4B4;
+	color: #B4B4B4;
 	box-shadow: 0px 2px 0px 0px #DFDFDF;
 }
 
@@ -1305,8 +1336,11 @@ CATALOG;
 
 
 .catalog-content-box {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	margin-bottom: 60px;
 }
 
@@ -1516,7 +1550,7 @@ CATALOG;
 }
 
 .pagination li:active {
-	background: #D5D5D5
+	background: #D5D5D5;
 	box-shadow: inset 0px 1px 0 #BFBFBF;
 }
 
@@ -1704,11 +1738,13 @@ CATALOG;
 }
 
 .modal-write-us .close::before {
-	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	        transform: rotate(45deg);
 }
 
 .modal-write-us .close::after {
-	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
 }
 
 
@@ -1725,6 +1761,17 @@ CATALOG;
 	z-index: 2000;
 
 	background: rgba(0,0,0,0.5);
+}
+
+
+@-webkit-keyframes show{
+	 0%{
+		 opacity:0;
+	 } 
+	 
+	 100% {
+		 opacity:1;
+	 }
 }
 
 
@@ -1752,7 +1799,8 @@ CATALOG;
 
 
 .modal-write-us-opacity {
-	animation: show 1s; /* Указываем название анимации, её время и количество повторов*/
+	-webkit-animation: show 1s;
+	        animation: show 1s; /* Указываем название анимации, её время и количество повторов*/
 }
 
 .overlay-show {
@@ -1765,24 +1813,51 @@ CATALOG;
 }
 
 .modal-shake {
-	animation: shake 0.6s;
+	-webkit-animation: shake 0.6s;
+	        animation: shake 0.6s;
+}
+
+@-webkit-keyframes shake {
+  10%, 90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
 }
 
 @keyframes shake {
   10%, 90% {
-    transform: translate3d(-1px, 0, 0);
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
   }
   
   20%, 80% {
-    transform: translate3d(2px, 0, 0);
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
   }
 
   30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
   }
 
   40%, 60% {
-    transform: translate3d(4px, 0, 0);
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
   }
 }
 
